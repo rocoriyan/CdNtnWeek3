@@ -1,9 +1,17 @@
 // START task 1
 const hideCat = document.getElementById("closeCat");
 const hideButton = document.getElementById("hideMe"); //setting up variables for javascript
+let isHidden = false;
 
 hideButton.addEventListener('click', (event) => { //when you click the button...
-    hideCat.style.visibility="hidden"; //hide the cat image
+    isHidden = !isHidden;
+    if(isHidden){
+        hideCat.style.visibility="visible"; //show the cat image
+    }
+    else{
+        hideCat.style.visibility="hidden"; //hide the cat image
+    }
+    
 })
 // END task 1
 
