@@ -31,6 +31,12 @@ colourButton.addEventListener('click', (changeColour) => {
 });
 // END task 3
 
+// START task 4
+document.addEventListener('click', (outputPos) => {
+    document.getElementById("task4p").textContent = `Click co-ordinates - X: ${outputPos.clientX}  Y: ${outputPos.clientY}`;
+})
+// END task 4
+
 // START bonus
 const catImg = document.getElementById("danceCat");
 const danceButton = document.getElementById("makeDance"); 
