@@ -8,14 +8,16 @@ hideButton.addEventListener('click', (event) => { //when you click the button...
 // END task 1
 
 // START task 2
-const changeImg = document.getElementById("changeCat");
-const changeInput = document.getElementById("changeTxt");
 const changeButton = document.getElementById("changeMe");
 
 changeButton.addEventListener('click', (changeImg) => {
-    changeImg.src = changeInput.value;
+    document.getElementById("changeCat").src = document.getElementById("changeTxt").value;
 })
 // END task 2
+
+// START task 3
+
+// END task 3
 
 // START bonus
 const catImg = document.getElementById("danceCat");
