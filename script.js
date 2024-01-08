@@ -46,11 +46,11 @@ danceButton.addEventListener('click', (makeDance) =>{ // when the button is clic
     catRight = !catRight; //this variable becomes opposite boolean value. basically, the cat has been told to change direction
     if(catRight){ //if cat is facing right
         catImg.src="cat left.jpg"; //change image to cat facing left
-        catImg.alt="a cat on its hind legs with its paws in the air, facing right";//update alt text accordingly
+        catImg.alt="a cat on its hind legs with its paws in the air, facing left";//update alt text accordingly
     }
     else{ //if cat is facing left
         catImg.src="cat right.jpg"; //change image to cat facing right
-        catImg.alt="a cat on its hind legs with its paws in the air, facing left"; //update alt text accordingly
+        catImg.alt="a cat on its hind legs with its paws in the air, facing right"; //update alt text accordingly
     };
 });
 // END bonus
