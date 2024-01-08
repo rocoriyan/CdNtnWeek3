@@ -12,11 +12,15 @@ const changeButton = document.getElementById("changeMe");
 
 changeButton.addEventListener('click', (changeImg) => {
     document.getElementById("changeCat").src = document.getElementById("changeTxt").value;
-})
+});
 // END task 2
 
 // START task 3
+const colourButton = document.getElementById("colourMe");
 
+colourButton.addEventListener('click', (changeColour) => {
+    document.getElementById("task3header").style.color=document.getElementById("favColour").value;
+});
 // END task 3
 
 // START bonus
