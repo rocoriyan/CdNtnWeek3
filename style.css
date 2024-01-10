@@ -1,0 +1,28 @@
+#allContainer{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.drumItem{
+    width:200px;
+    height: 200px;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+}
+.drumItem p{
+    height: 22px;
+}
+#main-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 1050px;
+}
+#main-content div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
