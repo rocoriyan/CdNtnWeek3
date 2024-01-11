@@ -1,0 +1,47 @@
+body{
+    max-width: max-content;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+p{
+    min-height: 19px;
+}
+header{
+    margin: auto;
+    width: 100%;
+    max-width: max-content;
+    padding: 15px;
+    text-align: center;
+}
+#allHolder{
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 20px;
+}
+#code, #key, #charr{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+#code h2, #key h2, #charr h2{
+    margin: 0;
+}
+#code{
+    float:left;
+}
+#charr{
+    float: right;
+}
