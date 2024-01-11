@@ -5,17 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Keypress</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Intro to DOM</a></li>
-                <li><a href="keypress.html">Keycode</a></li>
-                <li><a href="drums.html">Drumkit</a></li>
-                <li><a href>Dice</a></li>
-            </ul>
-        </nav>
         <div id="key-content-container">
+            <nav>
+                <div class="dom-intro" onclick="location.href='index.html';">Intro to DOM</div>
+                <div class="keypress" onclick="location.href='keypress.html';">Keycode</div>
+                <div class="drumkit" onclick="location.href='drums.html';">Drumkit</div>
+                <div class="dice">Dice</div>
+            </nav>
             <header>
                 <h1>Welcome to my page!</h1>
                 <p id="infoP">Awaiting key press...</p>

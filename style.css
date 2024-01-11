@@ -1,17 +1,24 @@
 /* general styling */
-nav ul{
-    display: flex;
-    gap:10px;
-    list-style-type:none;
+nav{
+    display: inline-flex;
+    width: 900px;
+    background-color: #dd4141;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-nav li{
-    background-color: lightblue;
-    width:100px;
-    padding-top:10px;
-    padding-bottom:10px;
+body{
+    background-color: pink;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
 /* index style */
 img{
     max-width: 60%;
@@ -33,7 +40,7 @@ img{
     padding-right: 10%;
 }
 p{
-    min-height: 19px;
+    min-height: 24px;
 }
 header{
     margin: auto;
@@ -53,7 +60,7 @@ header{
     margin-top: 20px;
 }
 #code, #key, #charr{
-    background-color: pink;
+    background-color: #dd4141;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -76,27 +83,35 @@ header{
 }
 
 /* drum style */
-#allContainer{
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 .drumItem{
     width:200px;
     height: 200px;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #dd4141;
     align-items: center;
     justify-content: center;
 }
-.drumItem p{
-    height: 22px;
+.drumItem h2{
+    height: 40px;
+    font-size: 40px;
+}
+.numkey{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 10px;
+}
+.numkey p{
+    margin: 0;
+    padding: 0;
 }
 #main-content{
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    max-width: 800px;
+    max-width: 630px;
     text-align: center;
 }
 #main-content div{

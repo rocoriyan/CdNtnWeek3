@@ -4,50 +4,76 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav>
-            <ul>
-                <li><a href="index.html">Intro to DOM</a></li>
-                <li><a href="keypress.html">Keycode</a></li>
-                <li><a href="drums.html">Drumkit</a></li>
-                <li><a href>Dice</a></li>
-            </ul>
+            <div class="dom-intro" onclick="location.href='index.html';">Intro to DOM</div>
+            <div class="keypress" onclick="location.href='keypress.html';">Keycode</div>
+            <div class="drumkit" onclick="location.href='drums.html';">Drumkit</div>
+            <div class="dice">Dice</div>
         </nav>
-        <div id="allContainer">
-            <div id="main-content">
-                <h1>Drum Kit</h1>
-                <div id="drumset">
-                    <div id="boom" class="drumItem">
-                        <p>Boom</p>
+        <div id="main-content">
+            <h1>Drum Kit</h1>
+            <p>Click on a tile or press the associated key</p>
+            <div id="drumset">
+                <div id="boom" class="drumItem">
+                    <div class="numkey">
+                        <p>1</p>
                     </div>
-                    <div id="clap" class="drumItem">
-                        <p>Clap</p>
+                    <h2>Boom</h2>
+                </div>
+                <div id="clap" class="drumItem">
+                    <div class="numkey">
+                        <p>2</p>
                     </div>
-                    <div id="hihat" class="drumItem">
-                        <p>Hihat</p>
+                    <h2>Clap</h2>
+                </div>
+                <div id="hihat" class="drumItem">
+                    <div class="numkey">
+                        <p>3</p>
                     </div>
-                    <div id="kick" class="drumItem">
-                        <p>Kick</p>
+                    <h2>Hihat</h2>
+                </div>
+                <div id="kick" class="drumItem">
+                    <div class="numkey">
+                        <p>4</p>
                     </div>
-                    <div id="openhat" class="drumItem">
-                        <p>Openhat</p>
+                    <h2>Kick</h2>
+                </div>
+                <div id="openhat" class="drumItem">
+                    <div class="numkey">
+                        <p>5</p>
                     </div>
-                    <div id="ride" class="drumItem">
-                        <p>Ride</p>
+                    <h2>Openhat</h2>
+                </div>
+                <div id="ride" class="drumItem">
+                    <div class="numkey">
+                        <p>6</p>
                     </div>
-                    <div id="snare" class="drumItem">
-                        <p>Snare</p>
+                    <h2>Ride</h2>
+                </div>
+                <div id="snare" class="drumItem">
+                    <div class="numkey">
+                        <p>7</p>
                     </div>
-                    <div id="tink" class="drumItem">
-                        <p>Tink</p>
+                    <h2>Snare</h2>
+                </div>
+                <div id="tink" class="drumItem">
+                    <div class="numkey">
+                        <p>8</p>
                     </div>
-                    <div id="tom" class="drumItem">
-                        <p>Tom</p>
+                    <h2>Tink</h2>
+                </div>
+                <div id="tom" class="drumItem">
+                    <div class="numkey">
+                        <p>9</p>
                     </div>
+                    <h2>Tom</h2>
                 </div>
             </div>
-        </div>
         <script src="drumscript.js"></script>
     </body>
 </html>
