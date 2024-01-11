@@ -1,18 +1,11 @@
 /* index script */
 // START task 1
-const hideCat = document.getElementById("closeCat");
+let hideCat = document.getElementById("closeCat");
 const hideButton = document.getElementById("hideMe"); //setting up variables for javascript
 let isHidden = false;
 
 hideButton.addEventListener('click', (event) => { //when you click the button...
-    isHidden = !isHidden;
-    if(isHidden){
-        hideCat.style.visibility="visible"; //show the cat image
-    }
-    else{
-        hideCat.style.visibility="hidden"; //hide the cat image
-    }
-    
+    hideCat.classList.toggle('hide'); //toggle visibility. toggle is used here as otherwise first click does nothing. previous code was similar to bonus, using boolean
 })
 // END task 1
 

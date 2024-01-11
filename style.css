@@ -1,13 +1,34 @@
+/* general styling */
+nav ul{
+    display: flex;
+    gap:10px;
+    list-style-type:none;
+}
+nav li{
+    background-color: lightblue;
+    width:100px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: center;
+}
+
 /* index style */
 img{
     max-width: 60%;
 }
+#dom-tasks-container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.hide{
+    visibility: hidden;
+}
 
 /* keypress style */
-body{
+#key-content-container{
     max-width: max-content;
     margin: auto;
-    padding-top: 20px;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -18,7 +39,9 @@ header{
     margin: auto;
     width: 100%;
     max-width: max-content;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
     text-align: center;
 }
 #allHolder{
@@ -74,6 +97,7 @@ header{
     margin-right: auto;
     width: 70%;
     max-width: 800px;
+    text-align: center;
 }
 #main-content div{
     display: flex;
