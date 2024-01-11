@@ -1,3 +1,83 @@
+/* index style */
 img{
     max-width: 60%;
+}
+
+/* keypress style */
+body{
+    max-width: max-content;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+p{
+    min-height: 19px;
+}
+header{
+    margin: auto;
+    width: 100%;
+    max-width: max-content;
+    padding: 15px;
+    text-align: center;
+}
+#allHolder{
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 20px;
+}
+#code, #key, #charr{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+#code h2, #key h2, #charr h2{
+    margin: 0;
+}
+#code{
+    float:left;
+}
+#charr{
+    float: right;
+}
+
+/* drum style */
+#allContainer{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.drumItem{
+    width:200px;
+    height: 200px;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+}
+.drumItem p{
+    height: 22px;
+}
+#main-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 800px;
+}
+#main-content div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
 }

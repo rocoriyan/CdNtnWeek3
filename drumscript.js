@@ -53,5 +53,3 @@ tink.addEventListener('click', (playTink) => {
 tom.addEventListener('click', (playTom) => {
     soundTom.play()
 });
-
-/*console.log(drumPart);*/

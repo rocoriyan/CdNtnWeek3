@@ -1,3 +1,4 @@
+/* index script */
 // START task 1
 const hideCat = document.getElementById("closeCat");
 const hideButton = document.getElementById("hideMe"); //setting up variables for javascript
