@@ -23,7 +23,7 @@ class player{ //player object class
 let soloPlayer = new player(0,0,0,0);
 
 function rollDice(){
-    return Math.floor(Math.random() * 5) + 1; //meant to generate num from 1-6
+    return Math.round(Math.random() * 5) + 1; //meant to generate num from 1-6
 }
 
 const multiplayerToggle = document.getElementById('multiplayer-toggle');
