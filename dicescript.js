@@ -4,6 +4,7 @@ let rollTxt = document.getElementById('roll');
 let winTxt = document.getElementById('wins');
 let loseTxt = document.getElementById('losses');
 let dicePic = document.getElementById('dicePic');
+let diceContainer = document.getElementById('diceContainer');
 
 class player{ //player object class
     constructor(wins, score, roll, losses){
@@ -38,6 +39,10 @@ const dice = document.getElementById('dice-roll');
 dice.addEventListener('click', rollTheDice => {
     if(sp){ // single player
         soloPlayer.roll = rollDice(); //generate random number from 1 to 6
+        if(!dicePic){
+            diceContainer.innerHTML= "<img src=\"img/dq.png\" alt=\"A dice with a '?' on its face\" id=\"dicePic\">";
+            dicePic = document.getElementById('dicePic');
+        }
         dicePic.src=`img/d${soloPlayer.roll}.png`;
         dicePic.alt=`A dice with a ${soloPlayer.roll} on its face`;
         rollTxt.textContent = `Roll: ${soloPlayer.roll}`;

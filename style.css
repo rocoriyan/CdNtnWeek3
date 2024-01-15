@@ -138,3 +138,6 @@ header{
 #multiplayer-toggle{
     height: max-content;
 }
+#diceContainer{
+    height:90px;
+}
