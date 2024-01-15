@@ -1,7 +1,8 @@
 /* general styling */
 nav{
     display: inline-flex;
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     background-color: #dd4141;
     justify-content: space-around;
     margin: 0 auto;
@@ -31,14 +32,58 @@ img{
 .hide{
     visibility: hidden;
 }
-
-/* keypress style */
-#key-content-container{
-    max-width: max-content;
+.content-container{
     margin: auto;
     padding-left: 10%;
     padding-right: 10%;
+    text-align: center;
+    justify-content: center;
 }
+
+/* drum style */
+.big-text{
+    font-size: 25px;
+    font-weight: bold;
+}
+.drumItem{
+    width:200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #dd4141;
+    align-items: center;
+    justify-content: center;
+}
+.drumItem h2{
+    height: 40px;
+    font-size: 40px;
+}
+.numkey{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 10px;
+}
+.numkey p{
+    margin: 0;
+    padding: 0;
+}
+#main-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 630px;
+    text-align: center;
+}
+#main-content div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+/* keypress style */
 p{
     min-height: 24px;
 }
@@ -81,42 +126,15 @@ header{
 #charr{
     float: right;
 }
-
-/* drum style */
-.drumItem{
-    width:200px;
-    height: 200px;
+/* dice shit */
+#current-mode{
     display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: #dd4141;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-}
-.drumItem h2{
-    height: 40px;
-    font-size: 40px;
-}
-.numkey{
-    position: absolute;
-    top:0;
-    left:0;
-    padding: 10px;
-}
-.numkey p{
-    margin: 0;
-    padding: 0;
-}
-#main-content{
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    max-width: 630px;
     text-align: center;
+    width: 160px;
+    margin: 0 auto;
 }
-#main-content div{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
+#multiplayer-toggle{
+    height: max-content;
 }
